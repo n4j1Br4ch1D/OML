@@ -23,7 +23,8 @@
     "nested lists",
     "nested outlines",
     "structured list",
-    "outlines parser"
+    "outlines parser",
+    "txt list to JSON"
   ],
   "author": "Najib Rachid",
   "license": "MIT",

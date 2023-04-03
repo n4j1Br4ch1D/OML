@@ -1,0 +1,9 @@
+- clients
+  - John Doe, age 25, gender male, skills JavaScript CSS, hobbies Reading Sports
+  - Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
+- products
+  - Stamp Markers, price 20$, qty 12
+  - Web devlopment learning pack, price 40$
+    - Web hosting
+    - React Course
+    - Spring Boot Course
