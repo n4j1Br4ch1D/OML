@@ -1,0 +1,171 @@
+{
+  "name": "list",
+  "metadata": "",
+  "comments": "",
+  "subItems": [
+    {
+      "lineNumber": 0,
+      "order": "0-0",
+      "indent": 0,
+      "indicator": "-",
+      "name": "clients",
+      "metaData": {
+        "": []
+      },
+      "comment": "",
+      "subItems": [
+        {
+          "lineNumber": 1,
+          "order": "2-1",
+          "indent": 2,
+          "indicator": "",
+          "name": "-",
+          "metaData": {
+            "John": [
+              "Doe"
+            ],
+            "age": [
+              "25"
+            ],
+            "gender": [
+              "male"
+            ],
+            "skills": [
+              "JavaScript",
+              "CSS"
+            ],
+            "hobbies": [
+              "Reading",
+              "Sports"
+            ]
+          },
+          "comment": "",
+          "subItems": []
+        },
+        {
+          "lineNumber": 2,
+          "order": "2-2",
+          "indent": 2,
+          "indicator": "",
+          "name": "-",
+          "metaData": {
+            "Jane": [
+              "Doe"
+            ],
+            "age": [
+              "23"
+            ],
+            "gender": [
+              "female"
+            ],
+            "skills": [
+              "Drawing",
+              "Poetry",
+              "//",
+              "John's",
+              "sister"
+            ]
+          },
+          "comment": " John's sister\r",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "lineNumber": 3,
+      "order": "0-3",
+      "indent": 0,
+      "indicator": "-",
+      "name": "products",
+      "metaData": {
+        "": []
+      },
+      "comment": "",
+      "subItems": [
+        {
+          "lineNumber": 4,
+          "order": "2-4",
+          "indent": 2,
+          "indicator": "",
+          "name": "-",
+          "metaData": {
+            "Stamp": [
+              "Markers"
+            ],
+            "price": [
+              "20$"
+            ],
+            "qty": [
+              "12"
+            ]
+          },
+          "comment": "",
+          "subItems": []
+        },
+        {
+          "lineNumber": 5,
+          "order": "2-5",
+          "indent": 2,
+          "indicator": "",
+          "name": "-",
+          "metaData": {
+            "Web": [
+              "devlopment",
+              "learning",
+              "pack"
+            ],
+            "price": [
+              "40$"
+            ]
+          },
+          "comment": "",
+          "subItems": [
+            {
+              "lineNumber": 6,
+              "order": "4-6",
+              "indent": 4,
+              "indicator": "",
+              "name": "-",
+              "metaData": {
+                "Web": [
+                  "hosting"
+                ]
+              },
+              "comment": "",
+              "subItems": []
+            },
+            {
+              "lineNumber": 7,
+              "order": "4-7",
+              "indent": 4,
+              "indicator": "",
+              "name": "-",
+              "metaData": {
+                "React": [
+                  "Course"
+                ]
+              },
+              "comment": "",
+              "subItems": []
+            },
+            {
+              "lineNumber": 8,
+              "order": "4-8",
+              "indent": 4,
+              "indicator": "",
+              "name": "-",
+              "metaData": {
+                "Spring": [
+                  "Boot",
+                  "Course"
+                ]
+              },
+              "comment": "",
+              "subItems": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
