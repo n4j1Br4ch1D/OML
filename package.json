@@ -1,0 +1,34 @@
+{
+  "name": "lml",
+  "version": "1.0.0",
+  "description": "ListML (or ListMarkup) is a lightweight, human-readable, and machine-parseable markup language based on lists. It's designed for tasks such as outlining, organizing information, generating structured documents, and more. LML is extensible, allowing users to create custom list types and features.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n4j1Br4ch1D/LML.git"
+  },
+  "keywords": [
+    "LML",
+    "ListML",
+    "List markup language",
+    "markup languages",
+    "Markdown list",
+    "YAML List",
+    "ListMarkup",
+    "list parser",
+    "nested lists",
+    "nested outlines",
+    "structured list",
+    "outlines parser"
+  ],
+  "author": "Najib Rachid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n4j1Br4ch1D/LML/issues"
+  },
+  "homepage": "https://github.com/n4j1Br4ch1D/LML#readme"
+}
