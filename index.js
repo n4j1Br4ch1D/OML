@@ -8,13 +8,14 @@ export function toJSON(content) {
   const lines = content.trim().split("\n");
   for (let i = 0; i < lines.length; i++) {
     const numSpaces = lines[i].search(/\S/);
-    let newItem = {
+    const line = removeSingleLineComments(lines[i]);
+    const newItem = {
       lineNumber: i,
       order: numSpaces + "-" + i, //order
       indent: numSpaces,
-      indicator: extractIndicator(lines[i]),
-      name: extractName(lines[i]),
-      metaData: extractMetaData(lines[i], null),
+      indicator: extractIndicator(line),
+      name: extractName(line),
+      metaData: extractMetaData(line, null),
       comment: extractComments(lines[i], "//"),
       subItems: [],
     };
@@ -68,17 +69,16 @@ export function extractComments(str, subStr) {
 }
 
 export function extractName(str) {
-  return str.split(/\s+/)[1];
+  return str.trim().split(",")[0].split(/\s+/).slice(1).join(" ");
 }
 
 export function extractIndicator(str) {
-  return str.split(/\s+/)[0];
-}
+  return str.trim().split(/\s+/)[0];
+} 
 
 export function extractMetaData(str, dictionary) {
-  str = str.split(/\s+/).slice(2).join(" ");
   const obj = {};
-  const pairs = str.split(",");
+  const pairs = str.split(",").slice(1);
   pairs.forEach((pair) => {
     const [key, ...values] = pair.trim().split(/\s+/);
     if (obj[key]) {
@@ -111,6 +111,6 @@ export function getItem(str, indent, number) {
   }
 }
 
-export function removeComments(str, commentOpening, commentClosing) {} //single
-
-// format
+export function removeSingleLineComments(str) {
+  return str.replace(/\/\/.*$/gm, '');
+}

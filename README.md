@@ -42,7 +42,7 @@ yarn add listml
   - Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
 - products
   - Stamp Markers, price 20$, qty 12
-  - Web devlopment learning pack, price 40$
+  - Web devleopment learning pack, price 40$
     - Web hosting
     - React Course
     - Spring Boot Course
@@ -64,9 +64,11 @@ Once Run you will get the following result:
     - Develop essential methods.
     - Improv Data Structure.
   - [Agenda] Beta Version 1.0.x : xx/03/2023
+    - Fix Extract indicator/name/metaData.
     - Fix name extractor space issue.
     - Fix empty metadata.
     - Improve Code.
+    - Enable customization.
     - Fix comments in metadata.
     - Add comment extractor.
     - Add ordering.

@@ -9,21 +9,16 @@
       "indent": 0,
       "indicator": "-",
       "name": "clients",
-      "metaData": {
-        "": []
-      },
-      "comment": "",
+      "metaData": {},
+      "comment": " comment\r",
       "subItems": [
         {
           "lineNumber": 1,
           "order": "2-1",
           "indent": 2,
-          "indicator": "",
-          "name": "-",
+          "indicator": "-",
+          "name": "John Doe",
           "metaData": {
-            "John": [
-              "Doe"
-            ],
             "age": [
               "25"
             ],
@@ -46,12 +41,9 @@
           "lineNumber": 2,
           "order": "2-2",
           "indent": 2,
-          "indicator": "",
-          "name": "-",
+          "indicator": "-",
+          "name": "Jane Doe",
           "metaData": {
-            "Jane": [
-              "Doe"
-            ],
             "age": [
               "23"
             ],
@@ -60,10 +52,7 @@
             ],
             "skills": [
               "Drawing",
-              "Poetry",
-              "//",
-              "John's",
-              "sister"
+              "Poetry"
             ]
           },
           "comment": " John's sister\r",
@@ -77,21 +66,16 @@
       "indent": 0,
       "indicator": "-",
       "name": "products",
-      "metaData": {
-        "": []
-      },
+      "metaData": {},
       "comment": "",
       "subItems": [
         {
           "lineNumber": 4,
           "order": "2-4",
           "indent": 2,
-          "indicator": "",
-          "name": "-",
+          "indicator": "-",
+          "name": "Stamp Markers",
           "metaData": {
-            "Stamp": [
-              "Markers"
-            ],
             "price": [
               "20$"
             ],
@@ -106,14 +90,9 @@
           "lineNumber": 5,
           "order": "2-5",
           "indent": 2,
-          "indicator": "",
-          "name": "-",
+          "indicator": "-",
+          "name": "Web development learning pack",
           "metaData": {
-            "Web": [
-              "devlopment",
-              "learning",
-              "pack"
-            ],
             "price": [
               "40$"
             ]
@@ -124,13 +103,9 @@
               "lineNumber": 6,
               "order": "4-6",
               "indent": 4,
-              "indicator": "",
-              "name": "-",
-              "metaData": {
-                "Web": [
-                  "hosting"
-                ]
-              },
+              "indicator": "-",
+              "name": "Web hosting",
+              "metaData": {},
               "comment": "",
               "subItems": []
             },
@@ -138,13 +113,9 @@
               "lineNumber": 7,
               "order": "4-7",
               "indent": 4,
-              "indicator": "",
-              "name": "-",
-              "metaData": {
-                "React": [
-                  "Course"
-                ]
-              },
+              "indicator": "-",
+              "name": "React Course",
+              "metaData": {},
               "comment": "",
               "subItems": []
             },
@@ -152,14 +123,9 @@
               "lineNumber": 8,
               "order": "4-8",
               "indent": 4,
-              "indicator": "",
-              "name": "-",
-              "metaData": {
-                "Spring": [
-                  "Boot",
-                  "Course"
-                ]
-              },
+              "indicator": "-",
+              "name": "Spring Boot Course",
+              "metaData": {},
               "comment": "",
               "subItems": []
             }
