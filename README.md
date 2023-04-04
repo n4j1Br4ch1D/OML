@@ -20,7 +20,10 @@ OutlineML (or OutlineMarkup) is a lightweight, human-readable, and machine-parse
 - [x] Customizable & Extensible. 
 - [ ] IDE Integrations.
 
-## Install
+## Usage
+### Install
+
+Install OML javascript parser:
 
 ```sh
 #npm
@@ -29,12 +32,19 @@ npm i outlineml
 #yarn
 yarn add outlineml
 ```
+### Syntax: Rules & Conventions
 
-## Usage
+### Methods
 
+### Config & Dictionary
 
+### Formating the Code
+
+### IDE (CodeMirror)
 
 ## Demo
+
+Lets parse the following list into json using the `toJSON` method:
 
 ```txt
 - clients
@@ -53,6 +63,8 @@ Once run you will get the following result:
 ```json
 
 ```
+
+You can also reverse the parsing using the `toOML` method.
 
 ## Releases
 
