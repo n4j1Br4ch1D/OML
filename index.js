@@ -26,7 +26,7 @@ export function toJSON(content) {
   return obj;
 }
 
-export function toLML(obj, indent, indicator) {
+export function toOML(obj, indent, indicator) {
   let str;
   obj.forEach((item) => {
     str +=
@@ -38,7 +38,7 @@ export function toLML(obj, indent, indicator) {
       comment +
       "\n";
     if (item.subItems.length > 0) {
-      toLML(item, indent, indicator);
+      toOML(item, indent, indicator);
     }
   });
   return str;

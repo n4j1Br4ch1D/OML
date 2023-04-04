@@ -1,14 +1,14 @@
-# :clipboard: LML - List Markup Language
+# :clipboard: OML - Outline Markup Language
 - :date:**04-03-2023** :pushpin:**Alpha Version 1.0.1**
-- :computer:<a href="https://github.com/n4j1Br4ch1D" target="_blank" title="NajibRachid: Agile full-stack developer">NajibRachid</a> :purple_circle:<a href="https://anmoonweb.com/?ref=lml" target="_blank" title="ANMOON: Right talents at the right place ">ANMOON</a> :office: <a href="https://x-hub.io/?ref=lml" target="_blank" title="XHUB: For Developers By Developers">XHUB-Labs</a>
+- :computer:<a href="https://github.com/n4j1Br4ch1D" target="_blank" title="NajibRachid: Agile full-stack developer">NajibRachid</a> :purple_circle:<a href="https://anmoonweb.com/?ref=oml" target="_blank" title="ANMOON: Right talents at the right place ">ANMOON</a> :office: <a href="https://x-hub.io/?ref=oml" target="_blank" title="XHUB: For Developers By Developers">XHUB-Labs</a>
 
-ListML (or ListMarkup) is a lightweight, human-readable, and machine-parseable markup language based on lists. It's designed for tasks such as outlining, organizing information, generating structured documents, and more. LML is extensible, allowing users to create custom list types and features.
+OutlineML (or OutlineMarkup) is a lightweight, human-readable, and machine-parseable markup language based on outlines. It's designed for tasks such as outlining, organizing information, generating structured documents, and more. OML is extensible, allowing users to create custom outline types and features.
 
-**keywords:** _LML, ListML, List markup language, markup languages, Markdown list, YAML List, ListMarkup, list parser, nested lists, nested outlines, structured list, outlines parser, txt list to JSON_
+**keywords:** _OML, ListML, OutlineML, List markup language, Outline markup language, markup languages, Markdown list, Markdown outlines, YAML List, ListMarkup, list parser, nested lists, nested outlines, structured list, outlines parser, txt list to JSON._
 
 ---
 
-<img src="https://raw.githubusercontent.com/n4j1Br4ch1D/lml/main/assets/lml.png" alt="List markup language" />
+<img src="https://raw.githubusercontent.com/n4j1Br4ch1D/oml/main/assets/oml.png" alt="Outline markup language" />
 
 ## Features
 
@@ -24,10 +24,10 @@ ListML (or ListMarkup) is a lightweight, human-readable, and machine-parseable m
 
 ```sh
 #npm
-npm i listml
+npm i outlineml
 
 #yarn
-yarn add listml
+yarn add outlineml
 ```
 
 ## Usage
@@ -42,13 +42,13 @@ yarn add listml
   - Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
 - products
   - Stamp Markers, price 20$, qty 12
-  - Web devleopment learning pack, price 40$
+  - Web development learning pack, price 40$
     - Web hosting
     - React Course
     - Spring Boot Course
 ```
 
-Once Run you will get the following result:
+Once run you will get the following result:
 
 ```json
 
@@ -72,7 +72,7 @@ Once Run you will get the following result:
     - Fix comments in metadata.
     - Add comment extractor.
     - Add ordering.
-    - Add ToLML method.
+    - Add toOML method.
     - Add Formating.
 ```
 
