@@ -1,4 +1,4 @@
-- clients // comment
+- clients 
   - John Doe, age 25, gender male, skills JavaScript CSS, hobbies Reading Sports
   - Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
 - products
