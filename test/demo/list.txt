@@ -1,9 +1,10 @@
-- clients 
-  - John Doe, age 25, gender male, skills JavaScript CSS, hobbies Reading Sports
-  - Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
-- products
-  - Stamp Markers, price 20$, qty 12
-  - Web development learning pack, price 40$
-    - Web hosting
-    - React Course
-    - Spring Boot Course
+1- allinone ecommerce //yes
+  1.1- clients 
+    1.1.1- John Doe, age 25, gender male, skills JavaScript CSS, hobbies Reading Sports
+    1.1.2- Jane Doe, age 23, gender female, skills Drawing Poetry // John's sister
+  1.2- products
+    1.2.1- Stamp Markers, price 20$, qty 12
+    1.2.2- Web development learning pack, price 40$
+      1.2.2.1- Web hosting
+      1.2.2.2- React Course
+      1.2.2.3- Spring Boot Course

@@ -33,10 +33,21 @@ npm i outlineml
 yarn add outlineml
 ```
 ### Syntax: Rules & Conventions
+ img
+ - indent:  convention: start from 0 and increase any subitems by 2 
+ - indicator: is defined by 1st string before first space,  anythig can be used covention is to use symbols: -
+ - name: its first string before , or a : symbol.
+ - props are defined by key and value also can be singular if defined by a dictionary.
+ - comments  typical is // for singular and /* */
 
 ### Methods
 
+__ Extra methods __
+
 ### Config & Dictionary
+So the idea behid oml is to custmise to ur needs
+so you can set you help methods as such.
+
 
 ### Formating the Code
 

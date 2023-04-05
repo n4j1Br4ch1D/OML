@@ -1,46 +1,46 @@
 export function toJSON(content) {
-  const obj = {
-    name: "list",
-    metadata: "",
-    comments: "",
-    subItems: [],
-  };
+  const items =  [];
   const lines = content.trim().split("\n");
   for (let i = 0; i < lines.length; i++) {
-    const numSpaces = lines[i].search(/\S/);
+    const indent = lines[i].search(/\S/);
     const line = removeSingleLineComments(lines[i]);
     const newItem = {
       lineNumber: i,
-      order: numSpaces + "-" + i, //order
-      indent: numSpaces,
+      order: getOrder(i), 
+      indent: indent,
       indicator: extractIndicator(line),
       name: extractName(line),
       metaData: extractMetaData(line, null),
       comment: extractComments(lines[i], "//"),
       subItems: [],
     };
-    findParentArray(obj.subItems, "indent", numSpaces, "subItems").push(
+    findParentArray(items, "indent", indent, "subItems").push(
       newItem
     );
   }
-  return obj;
+  return items[0];
 }
 
 export function toOML(obj, indent, indicator) {
-  let str;
-  obj.forEach((item) => {
-    str +=
-      item.indent +
-      item.indicator +
-      item.name +
-      parseMetaData(item.metadata) +
-      item +
-      comment +
-      "\n";
+  let str='';
+  const items = [obj];
+  parse(items, indent, indicator);
+  function parse(items, indent, indicator) {
+    items.forEach((item) => {
+      str +=
+      " ".repeat(item.indent) +
+      item.indicator + " " +
+      item.name + ", " +
+      "item.metaData" +
+      (item.comment!="" + " //" ? item.comment : '')
+      + "\n";
+      console.log("str", str);
     if (item.subItems.length > 0) {
-      toOML(item, indent, indicator);
+      parse(item.subItems, indent, indicator);
     }
-  });
+    });
+    return str;
+  }
   return str;
 }
 
@@ -57,6 +57,10 @@ export function findParentArray(array, key, value, arrayKey) {
     }
   }
   return array;
+}
+
+export function getOrder(i) {
+  return i;
 }
 
 export function extractComments(str, subStr) {

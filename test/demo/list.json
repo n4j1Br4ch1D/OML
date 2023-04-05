@@ -1,22 +1,26 @@
 {
-  "name": "list",
-  "metadata": "",
-  "comments": "",
+  "lineNumber": 0,
+  "order": 0,
+  "indent": 0,
+  "indicator": "1-",
+  "name": "allinone ecommerce",
+  "metaData": {},
+  "comment": "yes\r",
   "subItems": [
     {
-      "lineNumber": 0,
-      "order": "0-0",
-      "indent": 0,
-      "indicator": "-",
+      "lineNumber": 1,
+      "order": 1,
+      "indent": 2,
+      "indicator": "1.1-",
       "name": "clients",
       "metaData": {},
       "comment": "",
       "subItems": [
         {
-          "lineNumber": 1,
-          "order": "2-1",
-          "indent": 2,
-          "indicator": "-",
+          "lineNumber": 2,
+          "order": 2,
+          "indent": 4,
+          "indicator": "1.1.1-",
           "name": "John Doe",
           "metaData": {
             "age": [
@@ -38,10 +42,10 @@
           "subItems": []
         },
         {
-          "lineNumber": 2,
-          "order": "2-2",
-          "indent": 2,
-          "indicator": "-",
+          "lineNumber": 3,
+          "order": 3,
+          "indent": 4,
+          "indicator": "1.1.2-",
           "name": "Jane Doe",
           "metaData": {
             "age": [
@@ -61,19 +65,19 @@
       ]
     },
     {
-      "lineNumber": 3,
-      "order": "0-3",
-      "indent": 0,
-      "indicator": "-",
+      "lineNumber": 4,
+      "order": 4,
+      "indent": 2,
+      "indicator": "1.2-",
       "name": "products",
       "metaData": {},
       "comment": "",
       "subItems": [
         {
-          "lineNumber": 4,
-          "order": "2-4",
-          "indent": 2,
-          "indicator": "-",
+          "lineNumber": 5,
+          "order": 5,
+          "indent": 4,
+          "indicator": "1.2.1-",
           "name": "Stamp Markers",
           "metaData": {
             "price": [
@@ -87,10 +91,10 @@
           "subItems": []
         },
         {
-          "lineNumber": 5,
-          "order": "2-5",
-          "indent": 2,
-          "indicator": "-",
+          "lineNumber": 6,
+          "order": 6,
+          "indent": 4,
+          "indicator": "1.2.2-",
           "name": "Web development learning pack",
           "metaData": {
             "price": [
@@ -100,30 +104,30 @@
           "comment": "",
           "subItems": [
             {
-              "lineNumber": 6,
-              "order": "4-6",
-              "indent": 4,
-              "indicator": "-",
+              "lineNumber": 7,
+              "order": 7,
+              "indent": 6,
+              "indicator": "1.2.2.1-",
               "name": "Web hosting",
               "metaData": {},
               "comment": "",
               "subItems": []
             },
             {
-              "lineNumber": 7,
-              "order": "4-7",
-              "indent": 4,
-              "indicator": "-",
+              "lineNumber": 8,
+              "order": 8,
+              "indent": 6,
+              "indicator": "1.2.2.2-",
               "name": "React Course",
               "metaData": {},
               "comment": "",
               "subItems": []
             },
             {
-              "lineNumber": 8,
-              "order": "4-8",
-              "indent": 4,
-              "indicator": "-",
+              "lineNumber": 9,
+              "order": 9,
+              "indent": 6,
+              "indicator": "1.2.2.3-",
               "name": "Spring Boot Course",
               "metaData": {},
               "comment": "",
