@@ -31,8 +31,8 @@ export function toOML(obj, indent, indicator) {
       " ".repeat(item.indent) +
       item.indicator + " " +
       item.name + ", " +
-      "item.metaData" +
-      (item.comment!="" + " //" ? item.comment : '')
+      parseMetaData(item.metaData) +
+      (item.comment!="" ? " //" + item.comment : '')
       + "\n";
       console.log("str", str);
     if (item.subItems.length > 0) {
@@ -57,6 +57,20 @@ export function findParentArray(array, key, value, arrayKey) {
     }
   }
   return array;
+}
+
+export function parseMetaData(obj) {
+  console.log(obj);
+  let str = '';
+  for (let key in obj) {
+    str += ' ' + key + ' ';
+    if (Array.isArray(obj[key])) {
+      str += obj[key].join(' ') + ',';
+    } else {
+      str += obj[key] + ',v';
+    }
+  }
+  return str; //.slice(0, -1);
 }
 
 export function getOrder(i) {

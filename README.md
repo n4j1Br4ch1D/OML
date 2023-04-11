@@ -1,10 +1,10 @@
 # :clipboard: OML - Outline Markup Language
 - :date:**04-03-2023** :pushpin:**Alpha Version 1.0.1**
-- :computer:<a href="https://github.com/n4j1Br4ch1D" target="_blank" title="NajibRachid: Agile full-stack developer">NajibRachid</a> :purple_circle:<a href="https://anmoonweb.com/?ref=oml" target="_blank" title="ANMOON: Right talents at the right place ">ANMOON</a> :office: <a href="https://x-hub.io/?ref=oml" target="_blank" title="XHUB: For Developers By Developers">XHUB-Labs</a>
+- :computer:<a href="https://github.com/n4j1Br4ch1D" target="_blank" title="NajibRachid: Agile full-stack developer">NajibRachid</a> :purple_circle:<a href="https://anmoonweb.com/?ref=oml" target="_blank" title="ANMOON: Right talents at the right place ">ANMOON</a> :office: <a href="https://x-hub.io/?ref=oml" target="_blank" title="XHUB: For Developers By Developers">XHUB</a>
 
 OutlineML (or OutlineMarkup) is a lightweight, human-readable, and machine-parseable markup language based on outlines. It's designed for tasks such as outlining, organizing information, generating structured documents, and more. OML is extensible, allowing users to create custom outline types and features.
 
-**keywords:** _OML, ListML, OutlineML, List markup language, Outline markup language, markup languages, Markdown list, Markdown outlines, YAML List, ListMarkup, list parser, nested lists, nested outlines, structured list, outlines parser, txt list to JSON._
+**keywords:** _OML, ListML, OutlineML, List markup language, Outline markup language, markup languages, Markdown list, Markdown outlines, YAML List, ListMarkup, list parser, nested lists, nested outlines, structured list, outlines parser, txt list to JSON, CSV, Comma-separated values._
 
 ---
 
@@ -16,8 +16,10 @@ OutlineML (or OutlineMarkup) is a lightweight, human-readable, and machine-parse
 - [x] Supports deeply nested lists.
 - [x] Supports MetaData/Properties.
 - [x] Supports Comments.
-- [x] Parses To JSON.
+- [x] Parse to a JSON Structured representation.
 - [x] Customizable & Extensible. 
+- [ ] Use as a pseudo language for AI(chatGPT).
+- [ ] CRUD Methods.
 - [ ] IDE Integrations.
 
 ## Usage
