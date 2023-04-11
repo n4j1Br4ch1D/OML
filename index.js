@@ -1,8 +1,31 @@
-export function toJSON(content) {
+export const defaultDictionary = {}
+
+export const defaultConfig = {
+  dictionary: defaultDictionary,
+  extractIndent: extractIndent,
+  removeSingleLineComments: removeSingleLineComments,
+  getOrder: getOrder,
+  extractIndicator: extractIndicator,
+  extractName: extractName,
+  extractMetaData: extractMetaData,
+  extractComments: extractComments
+}
+
+export function toJSON(content, config) {
+  const {
+    dictionary,
+    extractIndent,
+    removeSingleLineComments,
+    getOrder,
+    extractIndicator,
+    extractName,
+    extractMetaData,
+    extractComments
+  } = { ...defaultConfig, ...config };
   const items =  [];
   const lines = content.trim().split("\n");
   for (let i = 0; i < lines.length; i++) {
-    const indent = lines[i].search(/\S/);
+    const indent = extractIndent(lines[i]);
     const line = removeSingleLineComments(lines[i]);
     const newItem = {
       lineNumber: i,
@@ -10,7 +33,7 @@ export function toJSON(content) {
       indent: indent,
       indicator: extractIndicator(line),
       name: extractName(line),
-      metaData: extractMetaData(line, null),
+      metaData: extractMetaData(line, dictionary),
       comment: extractComments(lines[i], "//"),
       subItems: [],
     };
@@ -21,9 +44,11 @@ export function toJSON(content) {
   return items[0];
 }
 
-export function toOML(obj, indent, indicator) {
+export function toOML(obj, config) {
   let str='';
   const items = [obj];
+  let indent = null;
+  let indicator = null;
   parse(items, indent, indicator);
   function parse(items, indent, indicator) {
     items.forEach((item) => {
@@ -59,7 +84,7 @@ export function findParentArray(array, key, value, arrayKey) {
   return array;
 }
 
-export function parseMetaData(obj) {
+export function parseMetaData(obj, dictionary) {
   console.log(obj);
   let str = '';
   for (let key in obj) {
@@ -93,6 +118,10 @@ export function extractName(str) {
 export function extractIndicator(str) {
   return str.trim().split(/\s+/)[0];
 } 
+
+export function extractIndent(str) {
+  return str.search(/\S/);
+}
 
 export function extractMetaData(str, dictionary) {
   const obj = {};

@@ -2,4 +2,10 @@ import fs from "fs";
 import { toJSON } from "../../index.js";
 
 const content = fs.readFileSync("test/demo/list.txt", "utf-8");
-fs.writeFileSync("test/demo/list.json", JSON.stringify(toJSON(content), null, 2));
+
+const config = {
+    getOrder: function getOrder(i) {
+        return i+"test";
+      }
+}
+fs.writeFileSync("test/demo/list.json", JSON.stringify(toJSON(content, config), null, 2));
