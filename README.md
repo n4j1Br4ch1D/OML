@@ -18,7 +18,7 @@ OutlineML (or OutlineMarkup) is a lightweight, human-readable, and machine-parse
 - [x] Supports Comments.
 - [x] Parse to a JSON Structured representation.
 - [x] Customizable & Extensible. 
-- [ ] Use as a pseudo language for AI(chatGPT).
+- [ ] Use as a pseudo/prompting language for AI(chatGPT).
 - [ ] CRUD Methods.
 - [ ] IDE Integrations.
 
